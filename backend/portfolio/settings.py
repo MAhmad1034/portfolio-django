@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-ot3r_xzy(8!7^659gbrzn3%ok2mn9(9$qlx7yj%@e*ajf%k2w#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'muhammad-portfolio-backend-fpb2bchphwgebsam.southeastasia-01.azurewebsites.net',
+]
 
 
 # Application definition
@@ -55,7 +59,11 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:5173"]
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "https://yellow-forest-0ebb4ae1e.1.azurestaticapps.net",
+]
+DEBUG = False  # Ensure DEBUG is False for production
 
 ROOT_URLCONF = 'portfolio.urls'
 
