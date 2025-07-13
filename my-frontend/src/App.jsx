@@ -16,7 +16,7 @@ import React, { useState, useEffect } from 'react';
 
      useEffect(() => {
        const endpoints = ['summary', 'education', 'experience', 'certifications', 'projects', 'skills'];
-       Promise.all(endpoints.map(endpoint => axios.get(`http://localhost:8000/api/${endpoint}/`)))
+       Promise.all(endpoints.map(endpoint => axios.get(`https://muhammad-portfolio-backend-fpb2bchphwgebsam.southeastasia-01.azurewebsites.net/api/${endpoint}/`)))
          .then(responses => {
            setData({
              summary: responses[0].data,
